@@ -10,4 +10,4 @@ This is my tip calculator assignment for the CodePath Course, Swift for Designer
 -- Sliders rather than typing to increase speed of calculating tip
 -- Dynamic and fun data based on sliders
 
-![alt tag](https://raw.github.com/dnosk/Doge-Tips/branch/path/to/Demo-Video.gif)
+![alt tag](https://github.com/dnosk/Doge-Tips/blob/master/Demo-Video.gif)
