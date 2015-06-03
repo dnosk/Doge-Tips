@@ -4,6 +4,9 @@ This is my tip calculator assignment for the CodePath Course, Swift for Designer
 
 - It took me 3 hours to make
 
+Required tasks
+- Create tip calculator
+
 Optional tasks for CodePath
 - Changed app icon and launch image
 
