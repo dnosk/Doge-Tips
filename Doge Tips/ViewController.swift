@@ -39,14 +39,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func billAmountChanged(sender: UISlider) {
-        var billAmountDecimal = String(format: "%.2f", sender.value)
+        let billAmountDecimal = String(format: "%.2f", sender.value)
         billAmount.text = "Bill Amount: $\(billAmountDecimal)"
         billAmountGlobal = (billAmountDecimal as NSString).doubleValue
         
         calculateTotalCost()
     }
     @IBAction func tipPercentageChanged(sender: UISlider) {
-        var tipPercentageDecimal = String(format: "%.2f", sender.value)
+        let tipPercentageDecimal = String(format: "%.2f", sender.value)
         tipPercentage.text = "Tip: \(tipPercentageDecimal)%"
         tipPercentageGlobal = (tipPercentageDecimal as NSString).doubleValue
         
@@ -54,24 +54,24 @@ class ViewController: UIViewController {
     }
     
     func calculateTotalCost(){
-        var totalCostAmount = billAmountGlobal + ((tipPercentageGlobal/100) * billAmountGlobal)
-        var totalCostAmountDecimal = String(format: "%.2f", totalCostAmount)
+        let totalCostAmount = billAmountGlobal + ((tipPercentageGlobal/100) * billAmountGlobal)
+        let totalCostAmountDecimal = String(format: "%.2f", totalCostAmount)
         totalCost.text = "Total Cost: $\(totalCostAmountDecimal)"
         
-        var billMax = String(format: "%.2f", billAmountSlider.maximumValue)
-        var billMaxDecimal = (billMax as NSString).doubleValue
-        var tipMax = String(format: "%.2f", tipPercentageSlider.maximumValue)
-        var tipMaxDecimal = (tipMax as NSString).doubleValue
+        let billMax = String(format: "%.2f", billAmountSlider.maximumValue)
+        let billMaxDecimal = (billMax as NSString).doubleValue
+        let tipMax = String(format: "%.2f", tipPercentageSlider.maximumValue)
+        let tipMaxDecimal = (tipMax as NSString).doubleValue
         dogeImage.alpha = (CGFloat(billAmountGlobal / billMaxDecimal) + CGFloat(tipPercentageGlobal / tipMaxDecimal)) / 2
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
-        var width = UInt32(screenSize.width)
-        var height = UInt32(screenSize.height)
+        let width = UInt32(screenSize.width)
+        let height = UInt32(screenSize.height)
         
         let randomNumber1 = CGFloat(arc4random_uniform(width))
         let randomNumber2 = CGFloat(arc4random_uniform(height/2))
         
-        var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
+        let label = UILabel(frame: CGRectMake(0, 0, 200, 21))
         label.center = CGPointMake(randomNumber1, randomNumber2)
         label.textAlignment = NSTextAlignment.Center
         label.textColor = self.colorWheel.randomColor()
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     
     func getLabelsInView(view: UIView) -> [UILabel] {
         var results = [UILabel]()
-        for subview in view.subviews as! [UIView] {
+        for subview in view.subviews {
             if let labelView = subview as? UILabel {
                 results += [labelView]
             } else {

@@ -15,9 +15,9 @@ struct DogeSayings {
     ]
     
     func randomDoge() -> String {
-        var unsignedArrayCount = UInt32(dogeArray.count)
-        var unsignedRandomValue = arc4random_uniform(unsignedArrayCount)
-        var randomNumber = Int(unsignedRandomValue)
+        let unsignedArrayCount = UInt32(dogeArray.count)
+        let unsignedRandomValue = arc4random_uniform(unsignedArrayCount)
+        let randomNumber = Int(unsignedRandomValue)
         
         return dogeArray[randomNumber]
     }

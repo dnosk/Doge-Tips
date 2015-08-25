@@ -1,7 +1,8 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.49.6 clang-602.0.49)"
-options: "2943993ab4d2e19180ff22092c619921"
+version: "Apple Swift version 2.0 (swiftlang-700.0.47.4 clang-700.0.59.1)"
+options: "8024f5c640bd5ad84d40e0045d27423c"
+build_time: [493782485, 404456000]
 inputs: 
-- "/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/Doge Tips/ViewController.swift"
-- "/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/Doge Tips/DogeSayings.swift"
-- "/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/Doge Tips/AppDelegate.swift"
-- "/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/Doge Tips/ColorWheel.swift"
+	"/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/ColorWheel.swift": [493782466, 0]
+	"/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/ViewController.swift": [493782466, 0]
+	"/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/AppDelegate.swift": [492054435, 0]
+	"/Users/dnosk/Development/iOS 8/Doge Tips/Doge Tips/DogeSayings.swift": [493782466, 0]

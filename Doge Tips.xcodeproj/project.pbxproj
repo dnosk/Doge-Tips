@@ -11,10 +11,10 @@
 		33AACC201B1E836000553FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC1F1B1E836000553FF4 /* ViewController.swift */; };
 		33AACC231B1E836000553FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AACC211B1E836000553FF4 /* Main.storyboard */; };
 		33AACC251B1E836000553FF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AACC241B1E836000553FF4 /* Images.xcassets */; };
-		33AACC281B1E836000553FF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AACC261B1E836000553FF4 /* LaunchScreen.xib */; };
 		33AACC341B1E836000553FF4 /* Doge_TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC331B1E836000553FF4 /* Doge_TipsTests.swift */; };
 		33AACC3E1B1E8BBC00553FF4 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */; };
 		33AACC401B1E9F6500553FF4 /* DogeSayings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */; };
+		33CBE4621B71A32000FBA7A1 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,12 @@
 		33AACC1F1B1E836000553FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33AACC221B1E836000553FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33AACC241B1E836000553FF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		33AACC271B1E836000553FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		33AACC2D1B1E836000553FF4 /* Doge TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Doge TipsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AACC321B1E836000553FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AACC331B1E836000553FF4 /* Doge_TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doge_TipsTests.swift; sourceTree = "<group>"; };
 		33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogeSayings.swift; sourceTree = "<group>"; };
+		33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				33AACC211B1E836000553FF4 /* Main.storyboard */,
+				33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */,
 				33AACC1D1B1E836000553FF4 /* AppDelegate.swift */,
 				33AACC1F1B1E836000553FF4 /* ViewController.swift */,
 				33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */,
 				33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */,
 				33AACC241B1E836000553FF4 /* Images.xcassets */,
-				33AACC261B1E836000553FF4 /* LaunchScreen.xib */,
 				33AACC1B1B1E836000553FF4 /* Supporting Files */,
 			);
 			path = "Doge Tips";
@@ -162,6 +162,8 @@
 		33AACC101B1E836000553FF4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Daniel Noskin";
 				TargetAttributes = {
@@ -199,8 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AACC231B1E836000553FF4 /* Main.storyboard in Resources */,
-				33AACC281B1E836000553FF4 /* LaunchScreen.xib in Resources */,
 				33AACC251B1E836000553FF4 /* Images.xcassets in Resources */,
+				33CBE4621B71A32000FBA7A1 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +252,6 @@
 				33AACC221B1E836000553FF4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		33AACC261B1E836000553FF4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33AACC271B1E836000553FF4 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +413,7 @@
 				33AACC391B1E836000553FF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33AACC3A1B1E836000553FF4 /* Build configuration list for PBXNativeTarget "Doge TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +422,7 @@
 				33AACC3C1B1E836000553FF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
