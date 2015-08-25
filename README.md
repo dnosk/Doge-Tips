@@ -18,4 +18,4 @@ Optional tasks for fun
 - Dynamic and fun data based on sliders
 - Save Tips using NSUserDefaults for later reference
 
-![alt tag](https://github.com/dnosk/Doge-Tips/blob/master/Demo-Video.gif)
+![alt tag](https://github.com/dnosk/Doge-Tips/blob/master/Demo-Video-2.gif)
