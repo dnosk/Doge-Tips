@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333777C81B8C1A77005D2366 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333777C71B8C1A77005D2366 /* TableViewCell.swift */; };
 		33AACC1E1B1E836000553FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC1D1B1E836000553FF4 /* AppDelegate.swift */; };
 		33AACC201B1E836000553FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC1F1B1E836000553FF4 /* ViewController.swift */; };
 		33AACC231B1E836000553FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AACC211B1E836000553FF4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		33AACC3E1B1E8BBC00553FF4 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */; };
 		33AACC401B1E9F6500553FF4 /* DogeSayings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */; };
 		33CBE4621B71A32000FBA7A1 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */; };
+		33E803C51B8C035A00C9938D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E803C41B8C035A00C9938D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		333777C71B8C1A77005D2366 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		33AACC181B1E836000553FF4 /* Doge Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doge Tips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AACC1C1B1E836000553FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AACC1D1B1E836000553FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogeSayings.swift; sourceTree = "<group>"; };
 		33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		33E803C41B8C035A00C9938D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				33CBE4611B71A32000FBA7A1 /* Launch Screen.xib */,
 				33AACC1D1B1E836000553FF4 /* AppDelegate.swift */,
 				33AACC1F1B1E836000553FF4 /* ViewController.swift */,
+				333777C71B8C1A77005D2366 /* TableViewCell.swift */,
+				33E803C41B8C035A00C9938D /* TableViewController.swift */,
 				33AACC3D1B1E8BBC00553FF4 /* ColorWheel.swift */,
 				33AACC3F1B1E9F6500553FF4 /* DogeSayings.swift */,
 				33AACC241B1E836000553FF4 /* Images.xcassets */,
@@ -223,6 +229,8 @@
 				33AACC201B1E836000553FF4 /* ViewController.swift in Sources */,
 				33AACC401B1E9F6500553FF4 /* DogeSayings.swift in Sources */,
 				33AACC1E1B1E836000553FF4 /* AppDelegate.swift in Sources */,
+				333777C81B8C1A77005D2366 /* TableViewCell.swift in Sources */,
+				33E803C51B8C035A00C9938D /* TableViewController.swift in Sources */,
 				33AACC3E1B1E8BBC00553FF4 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
