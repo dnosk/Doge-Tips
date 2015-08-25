@@ -1,56 +1,127 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "Doge_TipsTests"
-nominals:
+provides-nominal:
 - "C14Doge_TipsTests14Doge_TipsTests"
-class-members:
-- "setUp"
+provides-member:
+- ["C14Doge_TipsTests14Doge_TipsTests", ""]
+provides-dynamic-lookup:
+- "tearDown"
 - "testPerformanceExample"
 - "testExample"
-- "tearDown"
-top-level:
-- "XCTestCase"
-- !private "BooleanLiteralType"
+- "setUp"
+depends-top-level:
 - !private "XCTAssert"
+- !private "BooleanLiteralType"
+- "Doge_TipsTests"
+- "XCTestCase"
 - !private "StringLiteralType"
-member-access:
+depends-member:
+- !private ["PSs9AnyObject", "XCTAssert"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "measureBlock"]
+- ["PSs9AnyObject", "setUp"]
+- ["PSs9AnyObject", "tearDown"]
+- ["PSs9AnyObject", "testExample"]
+- ["PSs9AnyObject", "testPerformanceExample"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11BooleanType", "deinit"]
+- !private ["PSs11CVarArgType", "XCTAssert"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "measureBlock"]
+- ["PSs11CVarArgType", "setUp"]
+- ["PSs11CVarArgType", "tearDown"]
+- ["PSs11CVarArgType", "testExample"]
+- ["PSs11CVarArgType", "testPerformanceExample"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "XCTAssert"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "measureBlock"]
+- ["PSs23CustomStringConvertible", "setUp"]
+- ["PSs23CustomStringConvertible", "tearDown"]
+- ["PSs23CustomStringConvertible", "testExample"]
+- ["PSs23CustomStringConvertible", "testPerformanceExample"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["C14Doge_TipsTests14Doge_TipsTests", "XCTAssert"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "deinit"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "init"]
+- !private ["C14Doge_TipsTests14Doge_TipsTests", "measureBlock"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "setUp"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "tearDown"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "testExample"]
+- ["C14Doge_TipsTests14Doge_TipsTests", "testPerformanceExample"]
+- !private ["PSs9Equatable", "XCTAssert"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "measureBlock"]
+- ["PSs9Equatable", "setUp"]
+- ["PSs9Equatable", "tearDown"]
+- ["PSs9Equatable", "testExample"]
+- ["PSs9Equatable", "testPerformanceExample"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "XCTAssert"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "measureBlock"]
+- ["PSs8Hashable", "setUp"]
+- ["PSs8Hashable", "tearDown"]
+- ["PSs8Hashable", "testExample"]
+- ["PSs8Hashable", "testPerformanceExample"]
+- ["PSs8Hashable", ""]
+- !private ["CSo8NSObject", "XCTAssert"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "measureBlock"]
+- ["CSo8NSObject", "setUp"]
+- ["CSo8NSObject", "tearDown"]
+- ["CSo8NSObject", "testExample"]
+- ["CSo8NSObject", "testPerformanceExample"]
+- !private ["PSo16NSObjectProtocol", "XCTAssert"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "measureBlock"]
+- ["PSo16NSObjectProtocol", "setUp"]
+- ["PSo16NSObjectProtocol", "tearDown"]
+- ["PSo16NSObjectProtocol", "testExample"]
+- ["PSo16NSObjectProtocol", "testPerformanceExample"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo6XCTest", "XCTAssert"]
+- ["CSo6XCTest", "init"]
+- !private ["CSo6XCTest", "measureBlock"]
+- ["CSo6XCTest", "setUp"]
+- ["CSo6XCTest", "tearDown"]
+- ["CSo6XCTest", "testExample"]
+- ["CSo6XCTest", "testPerformanceExample"]
+- !private ["CSo10XCTestCase", "XCTAssert"]
+- ["CSo10XCTestCase", "init"]
+- !private ["CSo10XCTestCase", "measureBlock"]
+- ["CSo10XCTestCase", "setUp"]
+- ["CSo10XCTestCase", "tearDown"]
+- ["CSo10XCTestCase", "testExample"]
+- ["CSo10XCTestCase", "testPerformanceExample"]
+- ["CSo10XCTestCase", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
 - "PSs23CustomStringConvertible"
-- "CSo10XCTestCase"
-- "PSs8Hashable"
+- "C14Doge_TipsTests14Doge_TipsTests"
 - "PSs9Equatable"
+- "PSs8Hashable"
 - "CSo8NSObject"
-- !private "C14Doge_TipsTests14Doge_TipsTests"
-- !private "PSs11BooleanType"
-- "PSs9AnyObject"
 - "PSo16NSObjectProtocol"
 - "CSo6XCTest"
-dynamic-lookup:
-cross-module:
+- "CSo10XCTestCase"
+depends-dynamic-lookup:
+depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Security.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/XCTest.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementQuery.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUICoordinate.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIDevice.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementTypeQueryProvider.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementTypes.h"
@@ -75,3 +146,4 @@ cross-module:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+interface-hash: "dee0dc08c027397ab5eb372fd7f37837"

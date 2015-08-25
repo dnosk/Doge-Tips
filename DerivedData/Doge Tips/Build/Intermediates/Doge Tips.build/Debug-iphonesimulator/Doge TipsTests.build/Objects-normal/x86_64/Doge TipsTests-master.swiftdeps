@@ -1,5 +1,5 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.47.4 clang-700.0.59.1)"
+version: "Apple Swift version 2.0 (swiftlang-700.0.57.3 clang-700.0.72)"
 options: "3c2947f7e9f5f6b8644579329698fcab"
-build_time: [493782489, 474038000]
+build_time: [493786138, 935720000]
 inputs: 
 	"/Users/dnosk/Development/iOS 8/Doge Tips/Doge TipsTests/Doge_TipsTests.swift": [486606944, 0]

@@ -17,20 +17,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipPercentageSlider: UISlider!
     @IBOutlet weak var dogeImage: UIImageView!
     
+    let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     let colorWheel = ColorWheel()
     let dogeSayings = DogeSayings()
+    var totalCostGlobal: Double = 0.00
     var billAmountGlobal: Double = 0.00
     var tipPercentageGlobal: Double = 0.00
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: false)
+        
         totalCost.textColor = self.colorWheel.randomColor()
         billAmount.textColor = self.colorWheel.randomColor()
         tipPercentage.textColor = self.colorWheel.randomColor()
         billAmountSlider.minimumTrackTintColor = self.colorWheel.randomColor()
         tipPercentageSlider.minimumTrackTintColor = self.colorWheel.randomColor()
         dogeImage.alpha = 0
+        
+        if defaults.objectForKey("time") == nil{
+            defaults.setObject(["1/1/15 00:00"], forKey: "time")
+            defaults.setObject([0.00], forKey: "totalCost")
+            defaults.setObject([0.00], forKey: "tipPercentage")
+            defaults.synchronize()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +56,7 @@ class ViewController: UIViewController {
         
         calculateTotalCost()
     }
+    
     @IBAction func tipPercentageChanged(sender: UISlider) {
         let tipPercentageDecimal = String(format: "%.2f", sender.value)
         tipPercentage.text = "Tip: \(tipPercentageDecimal)%"
@@ -55,6 +67,7 @@ class ViewController: UIViewController {
     
     func calculateTotalCost(){
         let totalCostAmount = billAmountGlobal + ((tipPercentageGlobal/100) * billAmountGlobal)
+        totalCostGlobal = totalCostAmount
         let totalCostAmountDecimal = String(format: "%.2f", totalCostAmount)
         totalCost.text = "Total Cost: $\(totalCostAmountDecimal)"
         
@@ -79,6 +92,28 @@ class ViewController: UIViewController {
         label.tag = 50
         self.view.addSubview(label)
     }
+    
+    @IBAction func saveMe(sender: AnyObject) {
+        let formatter: NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy hh:mm"
+        let stringDate: String = formatter.stringFromDate(NSDate())
+        
+        var timeDefault = defaults.arrayForKey("time")
+        var totalCostDefault = defaults.arrayForKey("totalCost")
+        var tipPercentageDefault = defaults.arrayForKey("tipPercentage")
+        
+        timeDefault?.append(stringDate)
+        totalCostDefault?.append(totalCostGlobal)
+        tipPercentageDefault?.append(tipPercentageGlobal)
+        
+        defaults.setObject(timeDefault, forKey: "time")
+        defaults.setObject(totalCostDefault, forKey: "totalCost")
+        defaults.setObject(tipPercentageDefault, forKey: "tipPercentage")
+        defaults.synchronize()
+        
+        clearMe(sender)
+    }
+    
     @IBAction func clearMe(sender: AnyObject) {
         totalCost.text = "Total Cost: $0.00"
         billAmount.text = "Bill Amount: $0.00"
